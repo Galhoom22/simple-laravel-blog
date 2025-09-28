@@ -22,4 +22,8 @@ class PostController extends Controller
         Post::create($validatedData); // Save the validated data to the database
         return redirect('/posts');
     }
+
+    public function show(Post $post){
+        return view('posts.show', ['post' => $post]);
+    }
 }

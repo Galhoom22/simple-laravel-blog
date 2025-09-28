@@ -6,7 +6,9 @@
     <div class="space-y-4">
         @foreach ($posts as $post)
             <div class="p-4 bg-white rounded-lg shadow-md">
-                <h2 class="text-xl font-semibold">{{ $post->title }}</h2>
+                <a href="/posts/{{ $post->id }}" class="text-xl font-semibold text-blue-600 hover:underline">
+                    {{ $post->title }}
+                </a>
                 <p class="text-gray-600 mt-2">{{ $post->body }}</p>
             </div>
         @endforeach
