@@ -18,7 +18,8 @@ class PostController extends Controller
     }
 
     public function store(StorePostRequest $request){
-        $validatedData = $request->validated(); 
-        dd($validatedData); // for debugging purposes
+        $validatedData = $request->validated();
+        Post::create($validatedData); // Save the validated data to the database
+        return redirect('/posts');
     }
 }
