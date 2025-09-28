@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
 
 class PostController extends Controller
@@ -16,7 +17,8 @@ class PostController extends Controller
         return view('posts.create'); // return the form view
     }
 
-    public function store(){
-        return 'Form submitted!'; 
+    public function store(StorePostRequest $request){
+        $validatedData = $request->validated(); 
+        dd($validatedData); // for debugging purposes
     }
 }
