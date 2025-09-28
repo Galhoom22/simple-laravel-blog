@@ -11,4 +11,12 @@ class PostController extends Controller
         $posts = Post::all();
         return view('posts.index', ['posts' => $posts]);
     }
+
+    public function create(){
+        return view('posts.create'); // return the form view
+    }
+
+    public function store(){
+        return 'Form submitted!'; 
+    }
 }
