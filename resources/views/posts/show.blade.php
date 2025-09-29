@@ -13,4 +13,6 @@
     </div>
 
     <a href="/" class="text-blue-500 hover:underline mt-6 inline-block">&larr; Back to all posts</a>
+
+    <a href="/posts/{{ $post->id }}/edit" class="text-green-500 hover:underline mt-6 inline-block ml-4">Edit Post</a>
 @endsection
