@@ -17,14 +17,15 @@ class PostController extends Controller
 
     public function create()
     {
-        return view('posts.create'); // return the form view
+        // Pass a new empty post object to the view
+        return view('posts.create', ['post' => new Post()]);
     }
 
     public function store(StorePostRequest $request)
     {
         $validatedData = $request->validated();
         Post::create($validatedData); // Save the validated data to the database
-        return redirect('/posts');
+        return redirect('/');
     }
 
     public function show(Post $post)
