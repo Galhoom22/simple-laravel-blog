@@ -12,3 +12,5 @@ Route::post('/posts', [PostController::class, 'store']); // to store the form da
 // Routes for updating a post
 Route::get('/posts/{post}/edit', [PostController::class, 'edit']); // Show the form to edit a post
 Route::put('/posts/{post}', [PostController::class, 'update']); // Submit the updated data
+
+Route::delete('/posts/{post}', [PostController::class, 'destroy']);

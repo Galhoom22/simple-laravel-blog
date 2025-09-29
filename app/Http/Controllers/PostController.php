@@ -44,4 +44,10 @@ class PostController extends Controller
         // Redirect to the post's show page with a success message
         return redirect('/posts/' . $post->id);
     }
+
+    public function destroy(Post $post)
+    {
+        $post->delete();
+        return redirect('/');
+    }
 }

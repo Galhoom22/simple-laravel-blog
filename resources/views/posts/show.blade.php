@@ -15,4 +15,10 @@
     <a href="/" class="text-blue-500 hover:underline mt-6 inline-block">&larr; Back to all posts</a>
 
     <a href="/posts/{{ $post->id }}/edit" class="text-green-500 hover:underline mt-6 inline-block ml-4">Edit Post</a>
+
+    <form action="/posts/{{ $post->id }}" method="POST" class="inline-block">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="text-red-500 hover:underline ml-4">Delete Post</button>
+    </form>
 @endsection
