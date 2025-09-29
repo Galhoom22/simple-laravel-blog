@@ -19,7 +19,7 @@
     {{-- start Form Section --}}
     <form action="/posts" method="POST">
         @csrf
-
+        
         <div class="mb-4">
             <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
             <input type="text" name="title" id="title"
@@ -37,7 +37,7 @@
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                 Create Post
             </button>
-            <a href="/posts" class="text-gray-500 ml-4">Cancel</a>
+            <a href="/" class="text-gray-500 ml-4">Cancel</a>
         </div>
     </form>
     {{-- end Form Section --}}

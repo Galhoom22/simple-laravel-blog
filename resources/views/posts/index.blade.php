@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-2xl font-bold mb-4">All Posts</h1>
+    <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold">All Posts</h1>
+        <a href="/posts/create" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Create New Post
+        </a>
+    </div>
 
     <div class="space-y-4">
         @foreach ($posts as $post)
