@@ -25,7 +25,6 @@ class PostCreationTest extends TestCase
         // 2. Act: Perform the action we want to test
         $response = $this->post('/posts', $postData);
 
-
         // 3. Assert: Check if the outcome is what we expected
         $response->assertStatus(302); // Assert the response is a redirect
         $response->assertRedirect('/'); // Assert it redirects to the homepage
