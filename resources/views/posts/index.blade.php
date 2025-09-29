@@ -18,4 +18,9 @@
             </div>
         @endforeach
     </div>
+
+    {{-- pagination links --}}
+    <div class="mt-6">
+        {{ $posts->links() }}
+    </div>
 @endsection
