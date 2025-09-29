@@ -16,7 +16,8 @@
 
     <a href="/posts/{{ $post->id }}/edit" class="text-green-500 hover:underline mt-6 inline-block ml-4">Edit Post</a>
 
-    <form action="/posts/{{ $post->id }}" method="POST" class="inline-block">
+    <form action="/posts/{{ $post->id }}" method="POST" class="inline-block"
+        onsubmit="return confirm('Are you sure you want to delete this post?');">
         @csrf
         @method('DELETE')
         <button type="submit" class="text-red-500 hover:underline ml-4">Delete Post</button>
