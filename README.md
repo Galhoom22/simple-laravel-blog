@@ -31,7 +31,7 @@ Key Features
 
 📝 Full CRUD System: Create, Read, Update, and Delete blog posts effortlessly.
 
-🛡️ Robust Validation: utilizes FormRequest classes (e.g., StorePostRequest) to ensure data integrity.
+🛡️ Robust Validation: Utilizes FormRequest classes (e.g., StorePostRequest) to ensure data integrity.
 
 🧪 Automated Testing: Includes Feature tests (e.g., PostCreationTest) using PHPUnit to ensure stability.
 
