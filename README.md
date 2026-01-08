@@ -38,8 +38,8 @@ This repository contains a simple yet powerful blog application. It serves as a 
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Laravel 11.x  
-- **Language**: PHP 8.2+  
+- **Framework**: Laravel 12.x  
+- **Language**: PHP 8.5+  
 - **Database**: MySQL / SQLite  
 - **Frontend Tooling**: Vite, PostCSS  
 - **Testing**: PHPUnit
@@ -51,6 +51,6 @@ Follow these steps to set up the project locally on your machine.
 ### Prerequisites
 
 Make sure you have the following installed:
-- PHP >= 8.2
+- PHP >= 8.5
 - Composer
 - Node.js & NPM
